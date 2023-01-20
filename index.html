@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mini Project</title>
+</head>
+
+<body>
+    <h1>Image Filters on the Web</h1>
+    <h3>Sub heading</h3>
+
+
+    <canvas id="canva"></canvas>
+
+    <!-- Upload Image -->
+    Upload Image :
+    <input type="file" multiple="false" accept="image/*" class="button" id="input" onchange="loadImage()">
+    <!-- filter 1 -->
+    <input type="button" class="button" value="Grayscale" id="grayscaleB" onclick="grayscaleFilter()">
+    <!-- filter 2 -->
+    <input type="button" class="button" value="Red" id="redB" onclick="redFilter()">
+    <!-- filter 3 -->
+    <input type="button" class="button" value="Blur" id="blurB" onclick="blurFilter()">
+    <!-- Reset img to Original -->
+    <input type="button" class="button" value="Reset" id="resetB" onclick="resetOriginal()">
+
+
+
+
+
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+    <!-- Duke learning programming library from Coursera is used for this project -->
+    <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script type="text/javascript" src="../common/js/cs101/SimpleImage.js"></script>
+</body>
+
+</html>
