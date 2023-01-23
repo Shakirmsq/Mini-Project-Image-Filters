@@ -4,7 +4,7 @@
         /* color: black */
     }
     to {
-        background-color: rgb(254, 254, 0);
+        background-color: aqua;
         /* color: white; */
     }
 }
@@ -12,6 +12,7 @@
 body {
     background-image: linear-gradient(to bottom, red, orange);
     margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -29,7 +30,21 @@ h1 {
     text-shadow: 400px;
 }
 
+h3 {
+    padding-inline-start: 34px;
+    padding: 20px;
+    background-image: radial-gradient(ellipse, rgb(255, 255, 255), rgb(58, 61, 58));
+    text-shadow: 2px 2px rgb(229, 229, 229);
+}
+
 canvas {
-    border: 2px solid gray;
+    width: 500px;
+    height: 500pz;
+    background-image: linear-gradient(to right, black, white);
+    border: 1px solid gray;
     margin: 30px;
+}
+
+.button {
+    background-color: aqua;
 }
