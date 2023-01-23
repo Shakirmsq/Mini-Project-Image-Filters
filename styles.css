@@ -1,5 +1,32 @@
+@keyframes headAnime {
+    from {
+        background-color: white;
+        /* color: black */
+    }
+    to {
+        background-color: rgb(254, 254, 0);
+        /* color: white; */
+    }
+}
+
 body {
-    background-color: darkslategray;
+    background-image: linear-gradient(to bottom, red, orange);
+    margin: 20px;
+}
+
+h1 {
+    width: 450px;
+    height: 50px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 20px;
+    animation-name: headAnime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    display: flex;
+    text-align: center;
+    text-shadow: 400px;
 }
 
 canvas {

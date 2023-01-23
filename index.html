@@ -14,27 +14,39 @@
     <h3>Sub heading</h3>
 
 
-    <canvas id="canva"></canvas>
+    <canvas id="can"></canvas>
 
     <!-- Upload Image -->
-    Upload Image :
-    <input type="file" multiple="false" accept="image/*" class="button" id="input" onchange="loadImage()">
-    <!-- filter 1 -->
-    <input type="button" class="button" value="Grayscale" id="grayscaleB" onclick="grayscaleFilter()">
-    <!-- filter 2 -->
-    <input type="button" class="button" value="Red" id="redB" onclick="redFilter()">
-    <!-- filter 3 -->
-    <input type="button" class="button" value="Fade" id="fadeB" onclick="fadeFilter()">
-    <!-- filter 4 -->
-    <input type="button" class="button" value="Filter-1" id="fil01" onclick="fil01Filter()">
-    <!-- filter 5 -->
-    <input type="button" class="button" value="Blur" id="blurB" onclick="blurFilter()">
+    <p>
+        Upload Image :
+        <input type="file" multiple="false" accept="image/*" class="button" id="input" onchange="loadImage()">
 
-    <!-- Reset img to Original -->
-    <input type="button" class="button" value="Reset" id="resetB" onclick="resetOriginal()">
-    <!-- Clear Canvas -->
-    <input type="button" value="Clear Canvas" id="clear" onclick="clearCanvas()">
+    </p>
 
+    <p>
+
+        Select any Filter for Image:
+        <!-- filter 1 -->
+        <input type="button" class="button" value="Grayscale" id="grayscaleB" onclick="grayscaleFilter()">
+        <!-- filter 2 -->
+        <input type="button" class="button" value="Red" id="redB" onclick="redFilter()">
+        <!-- filter 3 -->
+        <input type="button" class="button" value="Fade" id="fadeB" onclick="fadeFilter()">
+        <!-- filter 4 -->
+        <input type="button" class="button" value="Rainbow" id="rainB" onclick="makeRainbow()">
+        <!-- filter 5 -->
+        <input type="button" class="button" value="Blur" id="blurB" onclick="blurFilter()">
+        <!-- Filter 6 -->
+        <input type="button" value="window Pane" id="windowB" onclick="windowPaneFilter()">
+    </p>
+    <p>
+
+
+        <!-- Reset img to Original -->
+        <input type="button" class="button" value="Reset" id="resetB" onclick="resetOriginal()">
+        <!-- Clear Canvas -->
+        <input type="button" value="Clear Canvas" id="clear" onclick="clearCanvas()">
+    </p>
 
 
 
